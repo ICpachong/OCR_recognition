@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( OCR_recognition )
+find_package( OpenCV REQUIRED )
+add_executable(OCR_recognition  main.cpp )
+target_link_libraries(OCR_recognition ${OpenCV_LIBS} )
+target_link_libraries(OCR_recognition pthread)
